@@ -1,0 +1,150 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Fondo muy claro para dar contraste */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a; /* Azul oscuro */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #1e3a8a; /* Azul oscuro */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Inputs and buttons */
+input, select, button {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdfe1;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 320px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+button {
+    background-color: #1e40af; /* Azul central */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: #3b82f6; /* Azul más brillante al pasar el mouse */
+}
+
+/* Form sections */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 350px;
+}
+
+form input, form select, form button {
+    width: 100%;
+}
+
+select {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #dcdfe1;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #1e40af; /* Azul central */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+tr:hover {
+    background-color: #e0e7ff; /* Azul claro al pasar el mouse */
+}
+
+/* Alerts */
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeeba;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+    }
+}
